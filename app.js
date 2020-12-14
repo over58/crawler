@@ -5,6 +5,7 @@
 const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
+const { htmlToText} = require('html-to-text')
 
 class Novel {
     constructor (bookId, output) {
@@ -44,8 +45,7 @@ class Novel {
         function handleChapterContent(data) {
            const { result: { chapterName, content, bookName } } = data
             that.bookName = bookName
-           let text = content.replace(/<[^>]*>|/g, "");
-           text = text.replace(/\s{2,}/g, "\n");
+            const text = htmlToText(content, { wordWrap: 130})
            let p = path.join(__dirname, `./output/${that.bookId}/${that.writeIndex++}-${chapterName}.txt`)
            if (fs.existsSync(p)) {
                fs.writeFileSync(p, text)
