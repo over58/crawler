@@ -6,6 +6,7 @@ const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
 const { htmlToText} = require('html-to-text')
+const chalk = require('chalk') 
 
 class Novel {
     constructor (bookId, output) {
@@ -22,7 +23,6 @@ class Novel {
         function handleChapterTitle(data) {
             var { chapterlist: { chapters = [], chapterCount } } = data
             that.chapterList = that.chapterList.concat(chapters)
-            console.log(that.chapterList.length, chapterCount)
             if (that.chapterList.length < chapterCount) {
                 that.getChapterList(pageNum + 1)
             } else {
@@ -53,7 +53,7 @@ class Novel {
                fs.writeFileSync(p, text)
            }
     
-           console.log(`${chapterName}  写入成功~`)
+            console.log(`${chapterName}  ${chalk.green('写入成功~')}`)
        }
         const proms = this.chapterList.map(chapter => {
             return axios.get(`https://m.zongheng.com/h5/ajax/chapter?bookId=${this.bookId}&chapterId=${chapter.chapterId}&v=1607927882186&callback=handleChapterContent`)

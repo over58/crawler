@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^0.21.0",
+    "chalk": "^4.1.0",
+    "html-to-text": "^6.0.0"
+  }
+}

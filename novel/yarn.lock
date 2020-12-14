@@ -2,12 +2,39 @@
 # yarn lockfile v1
 
 
+ansi-styles@^4.1.0:
+  version "4.3.0"
+  resolved "https://npm.pri.ibanyu.com/ansi-styles/-/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
+  integrity sha1-7dgDYornHATIWuegkG7a00tkiTc=
+  dependencies:
+    color-convert "^2.0.1"
+
 axios@^0.21.0:
   version "0.21.0"
   resolved "https://npm.pri.ibanyu.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
   integrity sha1-Jt8IiAOiNQ3/LCf5b++Z/klEKso=
   dependencies:
     follow-redirects "^1.10.0"
+
+chalk@^4.1.0:
+  version "4.1.0"
+  resolved "https://npm.pri.ibanyu.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
+  integrity sha1-ThSHCmGNni7dl92DRf2dncMVZGo=
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+color-convert@^2.0.1:
+  version "2.0.1"
+  resolved "https://npm.pri.ibanyu.com/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
+  integrity sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=
+  dependencies:
+    color-name "~1.1.4"
+
+color-name@~1.1.4:
+  version "1.1.4"
+  resolved "https://npm.pri.ibanyu.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
+  integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
 
 deepmerge@^4.2.2:
   version "4.2.2"
@@ -61,6 +88,11 @@ follow-redirects@^1.10.0:
   resolved "https://npm.pri.ibanyu.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
   integrity sha1-X2m4Ezds7k/QR0o6uoNd8Eq3Y7c=
 
+has-flag@^4.0.0:
+  version "4.0.0"
+  resolved "https://npm.pri.ibanyu.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
+  integrity sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=
+
 he@^1.2.0:
   version "1.2.0"
   resolved "https://npm.pri.ibanyu.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
@@ -96,3 +128,10 @@ minimist@^1.2.5:
   version "1.2.5"
   resolved "https://npm.pri.ibanyu.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
+
+supports-color@^7.1.0:
+  version "7.2.0"
+  resolved "https://npm.pri.ibanyu.com/supports-color/-/supports-color-7.2.0.tgz#1b7dcdcb32b8138801b3e478ba6a51caa89648da"
+  integrity sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=
+  dependencies:
+    has-flag "^4.0.0"
