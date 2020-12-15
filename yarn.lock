@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+axios@^0.21.0:
+  version "0.21.0"
+  resolved "https://npm.pri.ibanyu.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+  integrity sha1-Jt8IiAOiNQ3/LCf5b++Z/klEKso=
+  dependencies:
+    follow-redirects "^1.10.0"
+
 bignumber.js@9.0.0:
   version "9.0.0"
   resolved "https://npm.pri.ibanyu.com/bignumber.js/-/bignumber.js-9.0.0.tgz#805880f84a329b5eac6e7cb6f8274b6d82bdf075"
@@ -11,6 +18,11 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://npm.pri.ibanyu.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+
+follow-redirects@^1.10.0:
+  version "1.13.1"
+  resolved "https://npm.pri.ibanyu.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
+  integrity sha1-X2m4Ezds7k/QR0o6uoNd8Eq3Y7c=
 
 handlebars@^4.7.6:
   version "4.7.6"
@@ -33,6 +45,11 @@ isarray@~1.0.0:
   version "1.0.0"
   resolved "https://npm.pri.ibanyu.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+
+mime@^2.4.6:
+  version "2.4.6"
+  resolved "https://npm.pri.ibanyu.com/mime/-/mime-2.4.6.tgz#e5b407c90db442f2beb5b162373d07b69affa4d1"
+  integrity sha1-5bQHyQ20QvK+tbFiNz0Htpr/pNE=
 
 minimist@^1.2.5:
   version "1.2.5"
