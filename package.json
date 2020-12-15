@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/over58/crawler/issues"
   },
-  "homepage": "https://github.com/over58/crawler#readme"
+  "homepage": "https://github.com/over58/crawler#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "mysql": "^2.18.1"
+  }
 }
